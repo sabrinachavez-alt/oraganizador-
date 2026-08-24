@@ -1,1 +1,2 @@
 # oraganizador-
+Tentei sei que meu projeto não está bom, dei o melhor de mim para entender na parte do INDEX coloquei a parte do cabeçalho  as coisas basiquinhas do início coisas que o usuario tem que informar e também os filtros. No CSS  que é a parte que estiliza o código tentei deixar as cores combinando, não consegui muito bem. Meu intuito inicial era que meu trabalho cadastrasse as tarefas tudo bonitinho aparentemente está funcionando e está certo. 
