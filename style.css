@@ -1,0 +1,77 @@
+body {
+    font-family: Arial;
+    background-color: #210303;
+    color: #dfdada;
+}
+
+.topbar {
+    background-color: rgb(76, 21, 21);
+    padding: 20px;
+    border-bottom: 1px solid #3d0707e1;
+}
+
+.brand {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.layout {
+    width: 90%;
+    margin: 30px auto;
+}
+
+.intro h1 {
+    font-size: 40px;
+}
+
+.panel {
+    background-color: rgb(170, 127, 127);
+    padding: 20px;
+    margin-top: 20px;
+    border: 1px solid #dd8eb8;
+    border-radius: 5px;
+}
+
+input,
+select,
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0 15px;
+}
+
+button {
+    background-color: #680f0f;
+    color: white;
+    padding: 10px;
+    border: none;
+}
+
+.task-card {
+    background-color: white;
+    padding: 15px;
+    margin: 10px 0;
+    border: 1px solid #836666;
+}
+
+.upcoming-item {
+    background-color: #143d14;
+    padding: 15px;
+    margin: 10px 0;
+}
+
+.priority {
+    padding: 5px;
+}
+
+.priority-alta {
+    background-color: #000000;
+}
+
+.priority-media {
+    background-color: #f2e8bd;
+}
+
+.priority-baixa {
+    background-color: #567d64;
+}

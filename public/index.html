@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Agenda | Organizador de Tarefas</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header class="topbar">
+
+        <div class="brand">
+            <span class="brand-mark">+</span>
+            <span>Agenda<span class="brand-dot"></span></span>
+        </div>
+
+        <span id="todayLabel"></span>
+
+    </header>
+
+
+    <main class="layout">
+
+        <section class="intro">
+
+            <p>Seu espaço de foco</p>
+
+            <h1>
+                Organize o que
+                <em>importa.</em>
+            </h1>
+
+            <p>
+                Planeje seus compromissos,
+                acompanhe o progresso e
+                deixe a semana mais leve.
+            </p>
+
+            <p id="progressText">0 de 0 concluídas</p>
+
+            <div class="progress-track">
+                <span id="progressBar"></span>
+            </div>
+
+        </section>
+
+
+        <section class="panel">
+
+            <h2>Adicionar tarefa</h2>
+
+            <form id="taskForm">
+
+                <label>Título</label>
+                <input
+                    id="titulo"
+                    name="titulo"
+                    type="text"
+                    placeholder="Ex.: Entregar trabalho"
+                    required
+                >
+
+                <label>Descrição</label>
+                <textarea
+                    id="descricao"
+                    name="descricao"
+                    placeholder="O que precisa ser feito?"
+                ></textarea>
+
+                <label>Data</label>
+                <input
+                    id="data"
+                    name="data"
+                    type="date"
+                    required
+                >
+
+                <label>Horário</label>
+                <input
+                    id="horario"
+                    name="horario"
+                    type="time"
+                >
+
+                <label>Categoria</label>
+                <select id="categoria" name="categoria" required>
+
+                    <option value="">Escolha</option>
+                    <option>Estudo</option>
+                    <option>Trabalho</option>
+                    <option>Pessoal</option>
+                    <option>Evento</option>
+                    <option>Outro</option>
+
+                </select>
+
+
+                <label>Prioridade</label>
+                <select id="prioridade" name="prioridade" required>
+
+                    <option value="">Escolha</option>
+                    <option>Baixa</option>
+                    <option>Média</option>
+                    <option>Alta</option>
+
+                </select>
+
+
+                <button type="submit">
+                    Adicionar tarefa
+                </button>
+
+                <p id="formMessage"></p>
+
+            </form>
+
+        </section>
+
+
+        <section class="tasks-section">
+
+            <h2>
+                Minhas tarefas
+                <span id="taskCount">0</span>
+            </h2>
+
+
+            <div class="filters">
+
+                <select id="statusFilter">
+
+                    <option value="todas">Todas</option>
+                    <option value="pendentes">Pendentes</option>
+                    <option value="concluidas">Concluídas</option>
+
+                </select>
+
+
+                <select id="categoryFilter">
+
+                    <option value="todas">Todas as categorias</option>
+                    <option>Estudo</option>
+                    <option>Trabalho</option>
+                    <option>Pessoal</option>
+                    <option>Evento</option>
+                    <option>Outro</option>
+
+                </select>
+
+            </div>
+
+
+            <div id="taskList"></div>
+
+        </section>
+
+
+        <section class="upcoming-section">
+
+            <h2>Próximos compromissos</h2>
+
+            <div id="upcomingList"></div>
+
+        </section>
+
+    </main>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
